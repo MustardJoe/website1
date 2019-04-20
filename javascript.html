@@ -1,0 +1,90 @@
+<!doctype>
+<html lang="en-US">
+<head>
+  <title>Jon's #4 website</title>
+
+  <link href="jonnyStyle.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+
+  <style>
+  </style>
+
+</head>
+
+<body>
+
+  <h1><a id="topoPage" href="main.html">Jon's #4 website</a></h1>
+
+  <p class="sidebar0">
+    <a href="javascript.html">JavaScript</a><br>
+    Yarns<br>
+    bluefeet<br>
+    lizard<br>
+    Godzilla<br>
+    Good Pizza<br>
+  </p>
+
+
+
+  <script type="text/javascript">
+    function colour() {
+      setInterval(function() {
+
+        if (document.getElementById('var').style.color == 'black') {
+            var col1 = 'blue';
+        }
+        else {
+            col1 = 'black';
+        }
+
+        if (document.getElementById('let').style.color == 'black') {
+          var col2 = 'red';
+        }
+        else {
+            col2 = 'black';
+        }
+
+        document.getElementById('var').style.color = col1;
+        document.getElementById('let').style.color = col2;
+      }, 500);
+    }
+  </script>
+
+  <h2 id="var" style="color:black;">HereStuff</h2>
+  <h2 id="let" style="color:black;">HereStuff</h2>
+  <button id="btn" onclick="colour()">Start</button>
+
+  <br>
+  <br>
+  <span id="theTime"></span>
+
+  <br>
+  <br>
+  <span id="theTime2"></span>
+
+<!-- HERE IS MY DAY AND DATE CALANDER SCRIPT -->
+  <script type="text/javascript">
+
+    var theDate = new Date();
+
+    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
+     "Oct", "Nov", "Dec"];
+    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
+     "Friday", "Saturday"];
+
+    var doWeek = days[theDate.getDay()];
+    var formatMonth = months[theDate.getMonth()];
+    var formatDay = theDate.getDate();
+    var formatYear = theDate.getFullYear();
+    var textDate = doWeek + ", " + formatMonth + " " + formatDay + ", "
+        + formatYear;
+
+    document.getElementById("theTime").innerHTML = textDate;
+    document.getElementById("theTime2").innerHTML = theDate;
+
+  </script>
+
+  <p class="newgreen">Evil Dead 2: Dead by Dawn</p>
+
+
+</body>
