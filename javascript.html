@@ -54,6 +54,8 @@
   <h2 id="let" style="color:black;">HereStuff</h2>
   <button id="btn" onclick="colour()">Start</button>
 
+  <div id="teststuff"></div>
+
   <br>
   <br>
   <span id="theTime"></span>
@@ -62,27 +64,8 @@
   <br>
   <span id="theTime2"></span>
 
-<!-- HERE IS MY DAY AND DATE CALANDER SCRIPT -->
-  <script type="text/javascript">
-
-    var theDate = new Date();
-
-    var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep",
-     "Oct", "Nov", "Dec"];
-    var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
-     "Friday", "Saturday"];
-
-    var doWeek = days[theDate.getDay()];
-    var formatMonth = months[theDate.getMonth()];
-    var formatDay = theDate.getDate();
-    var formatYear = theDate.getFullYear();
-    var textDate = doWeek + ", " + formatMonth + " " + formatDay + ", "
-        + formatYear;
-
-    document.getElementById("theTime").innerHTML = textDate;
-    document.getElementById("theTime2").innerHTML = theDate;
-
-  </script>
+  <script type="module" src="./js/teststuff.js"></script>
+  <script type="module" src="./js/daydate.js"></script>
 
   <p class="newgreen">Evil Dead 2: Dead by Dawn</p>
 
