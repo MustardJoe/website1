@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento&display=swap');
+
 
   body {
     background-color: rgb(50, 20, 125);
@@ -22,7 +24,8 @@
   }
   h2 {
     color: rgb(187, 184, 255);
-    font-size: 36px;
+    font-family: 'Sacramento', cursive;
+    font-size: 80px;
     margin-top: 25px;
     margin-left: 20px;
   }
